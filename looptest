@@ -1,0 +1,25 @@
+#!/bin/bash
+# Program:
+#   1-100 accumulate
+# Histroy:
+#      2017/8/20  Likoe    1st release
+
+
+#declare -i i=0
+#declare -i s=0
+
+i=0
+s=0
+
+while [ "$i" != "100" ]
+do
+
+	i=$(($i+1))
+	s=$(($s+$i))
+
+	
+#    i=$i+1
+#    s=$s+$i
+done
+echo "The Result of '1+2+3+....+100' is ==> $s"
+

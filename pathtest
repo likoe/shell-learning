@@ -1,0 +1,19 @@
+#!/bin/bash
+# Program:
+#      Program shows how environment var change in parent and child shell
+# Histroy:
+#      2017/08/19   Likoe 1st release
+
+PATH=/home/likoe:/boot
+export PATH 
+
+echo ${PATH}
+
+echo "The script name is    ==> $0"
+echo "Total parameter number is  ==> $#"
+[ "$#" -lt 2 ] && echo " you parameter is less than 2,Stop here " \
+       && exit 0 
+echo "You whole parameter is $@"
+echo "You whole Parameter is $*"
+echo "You 1st Parameter is  ==>$1"
+echo "You 2nd Parameter is  ==>$2"
